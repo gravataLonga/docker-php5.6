@@ -45,7 +45,7 @@ RUN php5enmod mcrypt
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add nginx volumes
-VOLUME ["/var/www"]
+VOLUME ["/opt/application"]
 
 # Set the work directory
-WORKDIR /var/www
+WORKDIR /opt/application
